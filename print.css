@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+html {
+	width:100%
+}
+body {
+	background: white;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 10pt;
+}
+#mainContent h1, #mainContent h2, #mainContent h3, #mainContent p, #mainContent li {
+	font-family:  "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;	
+}
+#mainContent {
+	margin: 0;
+	padding: 0;
+}
+#homePage #mainContent {
+	margin: 0;
+	padding: 0;
+}
+#breadcrumbs, #sidebar1, #sidebar2 {
+	display: none;
+}
+a:link, a:visited {
+	color: #0000FF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#mainContent a:link:after, #mainContent a:visited:after {
+	content: " (" attr(href) ") ";
+	font-size: 90%;
+}
+#mainContent a[href^="/"]:after {
+	content: " (http://www.goinggreen.com" attr(href) ") ";
+	page-break-inside:
+}
+
+

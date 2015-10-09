@@ -1,0 +1,545 @@
+/*-----------------------------------------------------------------------------
+Going Green Stylesheet
+
+version:   1.0
+author:    academyX
+email:     info@academyx.com
+website:   http://www.academyx.com/
+-----------------------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------------------
+COLOR PALETTE
+-----------------------------------------------------------------------------*/
+
+/* #5C743D dark green */
+/* #666666 dark grey */
+/* #99CC66 medium green */
+/* #993300 maroon */
+/* #CCEFAE medium light green */
+/* #D5EDB3 pale green */
+/* #F4FFE4 pale vanilla */
+
+
+/* --------------------------------------------------------------------------
+GENERAL PAGE RULES
+-----------------------------------------------------------------------------*/
+
+
+/* Remove padding and margin */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Put it back on certain elements or
+ add selectively as needed
+	h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul {
+	margin: 1em 0;
+}
+*/
+
+
+/* Remove border around linked images */
+img {
+	border: 0;
+}
+
+/* Tighten up table spacing and remove defaults for th cells */
+table { 
+  	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+th, td {
+  	text-align: left;
+	font-weight: normal;
+}
+
+
+/* --------------------------------------------------------------------------
+GENERAL LAYOUT
+-----------------------------------------------------------------------------*/
+body {
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+
+#container {
+	width: 100%;
+	/*margin: 0 auto;  the auto margins (in conjunction with a width) center the page if needed */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+
+/* -----------------------------------
+General Font Settings
+--------------------------------------*/
+
+body {
+	background-color:#F4FFE4;
+	font: 62.5%/1.6  "Trebuchet MS", Tahoma, Arial, Verdana, sans-serif;
+}
+
+/* -----------------------------------
+Headings and Text Blocks
+--------------------------------------*/
+
+
+/* -----------------------------------
+Links
+-----------------------------------------------------------------------------*/
+a {
+	color: #993300;
+}
+	
+a:hover {
+	color: #5C743D;
+}
+
+a[href ^="mailto:"] {
+	padding-right: 18px;
+    background:  url(images/icon_mailto.gif) no-repeat center right;
+   
+}
+a[target ="_blank"] {
+	padding-right: 18px;
+    background:  url(images/icon_popup.gif) no-repeat center right;
+}
+
+a[rel~='external'] {
+	padding-right: 18px;
+	background:  url(images/icon_external.gif) no-repeat center right;
+}
+
+a[href$='.pdf'] { 
+	padding-right: 18px;
+	background: transparent url(images/icon_pdf.gif) no-repeat center right;
+}
+
+a[href$='.doc'] { 
+	padding-right: 18px;
+	background: url(images/icon_doc.gif) no-repeat center right;
+}
+a[href$='.xls'] { 
+	padding-right: 18px;
+	background: url(images/icon_xls.gif) no-repeat center right;
+}
+
+#mapIt {
+	font: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.3em;
+	font-weight : bold;
+}
+#mapIt a:link, #mapIt a:visited {
+	color:#FFC;
+	display: block;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	background: url(images/pixy_maroon_yellow.gif) no-repeat left top; /*pixy style button rollover effect */
+	text-indent: 50px;
+}
+
+#mapIt a:hover {
+	color:#630;
+	background-position: right top; /*shift position to other button background */
+}
+
+
+/* -----------------------------------
+Floating and Clearing
+--------------------------------------*/
+
+.floatRt { 
+	float: right;
+	margin-left:1.5em;
+}
+
+.floatLft { 
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: .5em;
+}
+
+.clear {
+	clear:both;
+}
+
+
+/* -----------------------------------
+Branding and Masthead
+-----------------------------------------------------------------------------*/
+#masthead {
+	background-color: #D5EDB3;	
+	background-image : url(images/masthead_photo.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding : 1em 0 0 40%;
+}
+#masthead #logo	{
+	color: #5C743D;
+	font: normal 2.5em "Century Gothic", "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-variant : small-caps;
+	letter-spacing:.4em;
+	text-align:center;
+	padding-top: 1em;
+}
+
+#tagline 	{	
+	color: #993300;
+	font:1.1em "Century Gothic", "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	letter-spacing:.5em;
+	line-height:1.8em;
+	text-align:center;
+	padding-bottom: 1.5em;
+	}
+
+
+
+
+/* -----------------------------------
+Breadcrumb Nav
+-----------------------------------------------------------------------------*/
+#breadcrumbs {
+	color: #993300;
+	background-color: #99CC66;
+	font:1em Arial, Helvetica, sans-serif;
+	letter-spacing:.2em;
+	text-transform:uppercase;
+	padding : 1em 2em;
+}		
+
+#breadcrumbs a {
+	color: #993300;
+	font-weight:bold;
+	text-decoration:none;
+}
+	
+#breadcrumbs a:hover {
+	color: #CCEFAE;
+}
+
+
+/* -----------------------------------
+Site Nav
+-----------------------------------------------------------------------------*/
+#navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#navigation li {
+	display : inline;
+}
+	
+#navigation a {
+	display:block;
+	color: #D5EDB3;
+	font: bold 1.1em Arial, Helvetica, sans-serif;
+	line-height:1.6em;
+	letter-spacing:.1em;
+	text-decoration: none;
+	padding:.8em .6em 1em 2em;
+}
+	
+#navigation a:hover {
+	color:#993300;
+	background-color: #99CC66;
+}
+
+
+#homePage #navigation .home  a {
+	font-style : italic;
+}
+#aboutPage #navigation .about a {
+	font-style : italic;
+}
+#contactPage #navigation .contact a {
+	font-style : italic;
+}
+#calendarPage #navigation .calendar a {
+	font-style : italic;
+}
+#servicesPage #navigation .services a {
+	font-style : italic;
+}
+
+
+
+/* -----------------------------------
+Main Content
+-----------------------------------------------------------------------------*/
+#mainContent {
+ 	margin: 0 3em 0 12em; 
+	padding: 1em 10em 1em 10em;
+} 
+
+
+#homePage #mainContent {
+ 	margin: 0 12em 0 12em; 
+	padding: 1em 10em 1em 10em;
+} 
+
+#mainContent h1 {
+	color: #99CC66;
+	font: 1.8em Arial, Helvetica, sans-serif;
+	line-height:2.6em;
+	letter-spacing:.21em;
+	margin-bottom : 0;
+}
+
+#mainContent h2 {
+	color: #5C743D;
+	font: 1.5em Arial, Helvetica, sans-serif;
+	letter-spacing:.21em;
+	margin-bottom : 0;
+}
+	
+#mainContent p, #mainContent ul {
+	color:#666666;
+	font:1.1em Arial, Helvetica, sans-serif;
+	line-height:2em;
+	margin: 1em 0;
+}
+
+
+
+/* -----------------------------------
+Main Navigation Column
+-----------------------------------------------------------------------------*/
+#sidebar1 {
+	background: url(images/rc_dkgrn_btm_rt.gif) no-repeat right bottom; /*rounded corner for left sidebar */
+	background-color: #5C743D; 
+	float: left; 
+	width: 15em; 
+	padding: 1.5em 0; 
+}
+#sidebar1 ul {
+	margin-left: 1em; 
+	margin-right: 1em;
+	list-style-type:none;
+}
+
+/* -----------------------------------
+Optional Secondary Content Column
+-----------------------------------------------------------------------------*/
+#sidebar2 {
+	background: url(images/rc_ltgrn_btm_lft.gif) no-repeat left bottom; /*rounded corner for right sidebar */
+	float: right;
+	width: 20em;
+	padding: 1.5em 0;
+	background-color: #D9EBA3;
+}
+
+#sidebar2 h3 {
+	color: #993300;
+	font:bold 1.1em Arial, Helvetica, sans-serif;
+	line-height:2.2em;
+	letter-spacing:.2em;
+	text-transform:uppercase;
+	margin : 0 1em;
+}
+
+#sidebar2 p {
+	color: #666666;
+	font: 1em Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	margin : 0 1em;
+}
+
+
+/* -----------------------------------
+Footer
+-----------------------------------------------------------------------------*/
+
+#footer { 
+	clear:both;
+	text-align : center;
+	margin-left: 5em;
+	padding: 0 1em; 
+} 
+
+#footer p {
+	color: #666666;
+	font: 1.1em Arial, Helvetica, sans-serif;
+	font-style: italic;
+	margin: 0; 
+	padding: 1em 0; 
+}
+
+/* -----------------------------------
+Forms
+-----------------------------------------------------------------------------*/
+
+/* Removes fieldset borders. even on Opea 7 */
+fieldset {
+  border: 1px solid transparent;
+}
+
+#contactForm {
+	font: 1.1em "Century Gothic", "Trebuchet MS", Tahoma, Geneva, sans-serif;	
+}
+
+#contactForm ol {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+#contactForm fieldset {
+	background-color:#D5EDB3;
+	margin : 1em 0;
+	padding : 1em;
+	border : 1px solid #ccc;
+}
+
+#contactForm legend {
+	font-weight : bold;
+}
+
+#contactForm label {
+	display : block;
+	float : left; /* line up the input boxes*/
+	width : 10em;
+}
+
+#contactForm input {
+	width : 20em;	
+	margin-bottom : 1em;
+}
+
+#contactForm textarea {
+	width : 30em;
+	height : 10em;
+}
+
+#contactForm #buttonsDiv {
+	text-align : center;
+}
+
+#contactForm button {
+	color: #CCEFAE;
+	background-color:#5B743D;
+	width : 8em;
+	font: bold 1em Arial, Helvetica, sans-serif;
+	padding: 0.4em;
+	margin: .3em 1em;
+	cursor:pointer; 	/* the button element may not have a natural pointer cursor */
+	border: 2px groove #225C07;
+}
+
+
+/* -----------------------------------
+Tables
+-----------------------------------------------------------------------------*/
+
+
+#monthTable {
+	width : 50em;
+	border : 1px solid #666666;
+	border-collapse:collapse;
+}
+
+#monthTable td, #monthTable th {
+	font : 1.1em "Century Gothic", "Trebuchet MS", tahoma, trebuchet, sans-serif;
+	padding : .3em .5em .4em .6em;
+}	
+
+#monthTable col {
+	border-right : 1px solid #666666;	
+}
+
+#monthTable tr {
+	border-top : 1px solid #666;	
+}
+#monthTable tr.odd {
+	background-color:#CBBF94;
+}
+
+#monthTable tr:hover {
+	background-color:#9C3;
+}
+
+#monthTable thead {
+	background-color:#7B5A31;
+	color: #F0FFE2;
+}
+
+#monthTable thead tr:hover {
+	background-color:transparent;	
+}
+
+#monthTable caption {
+	caption-side:bottom;
+	text-align:right;
+	font : 1.1em  "Century Gothic", "Trebuchet MS", tahoma, trebuchet, sans-serif;
+	margin : 1em 0;
+}
+
+
+/* -----------------------------------
+Images 
+-----------------------------------------------------------------------------*/
+
+.shadowWrapper {
+	background: url(images/shadow.gif) no-repeat bottom right;
+	clear: right;
+	float: left;
+	position: relative;
+	margin: 1em 1em 0 1em;
+}
+ 
+.shadowWrapper img {
+	display: block;
+	margin: -5px 5px 5px -5px;
+	position: relative;
+}
+
+
+/* -----------------------------------
+Lists 
+-----------------------------------------------------------------------------*/
+
+#founders {
+	list-style-type: none;	
+}
+
+#founders li {
+	background: url(images/bullet_grn_chk.gif) no-repeat 0 50%;
+	padding-left: 2em;
+}
+#productList .productName {
+	display:none;
+	color:#56321D;
+	font:bold .9em Verdana, Arial, Helvetica, sans-serif;
+}
+
+#productList {
+	margin : 0;
+	padding : 0;
+	/*float : left; if the ul had a background on it this would be necessary to let it contain the list items within */ 
+}
+
+#productList li {
+	display: inline;	
+	list-style-type : none;
+	padding-right: 20px;
+}
+
+#productList img {
+	background-image: url(images/sprite_sm_products.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#productList #product2 {
+	background-position: left bottom;
+}
+#productList #product3 {
+	background-position: right top;
+}
+#productList #product4 {
+	background-position: right bottom;
+}
+
+{ page-break-before:
